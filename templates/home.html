@@ -1,9 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Employee Management System</title>
+  <title>Beauty Spot Booking System</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <style>
+    body {
+      background-color: pink;
+      font-family: cursive;
+    }
     .btn-primary {
       background-color: pink;
       border-color: pink;
@@ -12,26 +16,35 @@
       background-color: pink;
       border-color: pink;
     }
+    .container {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: pink;
+      color: black;
+    }
+    .list-group-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: pink;
+      color: black;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="mt-5">Welcome to Hajas Employee Management System!</h1>
+    <h1 class="mt-5">Welcome to the Beauty Spot Booking System!</h1>
     <p class="lead">Please choose one of the following options:</p>
     <ul class="list-group">
       <li class="list-group-item">
-        <a class="btn btn-primary" href="/registration">Employee Registration Form </a>
+        <a class="btn btn-primary" href="/booking">Make a Booking</a>
       </li>
       <li class="list-group-item">
-        <a class="btn btn-info" href="/information">View Information Of Employee</a>
+        <a class="btn btn-info" href="/information">Services and Pricing</a>
       </li>
     </ul>
   </div>
   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
 </html>
-
-
-
-
-
